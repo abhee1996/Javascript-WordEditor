@@ -15,19 +15,18 @@
     </p>
     <div class="app">
         <div class="toolbar">
-            <a type="button" href="#"  id="bold" class=" toolbarBtn">B</a>
-            <a type="button" href="#" onclick="clickItalic()" id="italic" class="italic toolbarBtn"><i>i</i></a>
-            <a type="button" href="#" onclick="clickUnderline()" id="Underline"
-                class="Underline toolbarBtn"><u>u</u></a>
-            <a type="button" href="#"  id="subscript" class="subscript toolbarBtn">
+            <a type="button" href="#" id="bold" class=" toolbarBtn">B</a>
+            <a type="button" href="#" id="italic" class="italic toolbarBtn"><i>i</i></a>
+            <a type="button" href="#" id="underline" class="Underline toolbarBtn"><u>u</u></a>
+            <a type="button" href="#" id="subscript" class="subscript toolbarBtn">
                 n<sub class="subscript">2</sub>
             </a>
             <a type="button" href="#"  id="superscript" class="supscript toolbarBtn">
                 n<sup class="supscript">2</sup>
             </a>
             <a type="button" href="#" id="table" class="toolbarBtn">Table</a>
-            <a type="button" href="#" id="unorderlist" class="unorderlist toolbarBtn">ul</a>
-            <a type="button" href="#" id="orderlist" class="orderlist toolbarBtn">ol</a>
+            <a type="button" href="#" onclick="clickUnOList()" id="unorderlist" class="unorderlist toolbarBtn">ul</a>
+            <a type="button" href="#" onclick="clickOList()" id="orderlist" class="orderlist toolbarBtn">ol</a>
             <a type="button" href="#" onclick="alighLeft()" id="alighLeft" class="alighLeft toolbarBtn">aL</a>
             <button type="file">Image </button>
             <!-- <input type="file"  id="uploadImg" placeholder="image" value="insert Img" /> -->
@@ -72,9 +71,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-    <script src="./react_html.js"></script>
-    <script src="./drag&drop.js"></script>
-    <script src="./createTable.js"></script>
+    <script src="react_html.js"></script>
+    <script src="drag&drop.js"></script>
+    <script src="createTable.js"></script>
+    <script src="addWordTools.js"></script>
+    <script src="addOrderList.js"></script>
+    <script src="addunOrderList.js"></script>
     <script>
         $('button').click(function () {
             $('#sourcecodediv').text($('#result')[0].outerHTML)
